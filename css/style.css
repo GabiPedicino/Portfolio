@@ -7,6 +7,7 @@
 
 body {
     background-color: whitesmoke;
+
 }
 /*-------VARIABLES--------*/
 :root {
@@ -36,7 +37,7 @@ header {
     top: 0;
     font-family: 'Indie Flower', cursive;
     box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: rgb(245, 243, 223);
 }
 
 ul {
@@ -111,6 +112,7 @@ p {
     display: flex;
     justify-content: center;
     padding-top: 30px;
+    background-image: repeating-linear-gradient(-45deg, #FFFFFF 0px, #FFFFFF 20px, --color-4 20px, --color-4 40px); 
 }
 #intro > .columna_izquierda {
     width: 40%;
@@ -184,6 +186,7 @@ p {
 .titulo-conocimientos {
     padding-top: 50px;
     text-align: center;
+  
 }
 .parrafo-conocimientos {
     text-align: center;
@@ -228,6 +231,10 @@ p {
     border: 15px solid var(--color-3);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
 
+}
+
+.bulma{
+    color: var(--color-2);
 }
 
 .conocimiento-item:hover {
@@ -345,6 +352,7 @@ p {
     background-color: white;
     color: var(--color-2);
     padding-left: 30px;
+    border-radius: 30px;
 }
 .columna-contactame p {
     font-size: 18px;
@@ -385,11 +393,14 @@ p {
 .mensajeform {
     display: flex;
     flex-direction: column;
+    
 }
 label {
     margin-top: 5px;
     margin-bottom: 10px;
     font-family: 'Indie Flower', cursive;
+    color: var(--color-2);
+
 }
 input[type='text'] {
     color: var(--color-1);
@@ -495,7 +506,9 @@ footer {
     color: var(--color-2);
 }
 
-/*---------medias-------------------*/
+
+
+/*---------MEDIA QUERIES-------------------*/
 @media (min-width: 1025px) {
     #hamburguesa-menu {
         display: none;
